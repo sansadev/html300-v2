@@ -1,4 +1,4 @@
-const template-hook = [
+const templateHook = [
   {
     "name": "Steve Smith",
     "jobTitle": "Project Manage",
@@ -53,9 +53,9 @@ const template-hook = [
   }
  ];
 
-const employee-info-all = template-hook.map(function(emp) {
+const employeeInfoAll = templateHook.map(function(emp) {
   let template = `
-  <section class="template-hook">
+
   <div class="card">
   <div class="left-content-card">
   <img src="img/unsplash-headshot.jpg" alt="male avatar picture for employee id">
@@ -74,8 +74,12 @@ const employee-info-all = template-hook.map(function(emp) {
 
   </div>
   </div>
-  </section>
-  `;
+
+  `
+  return template;
   });
 
-  $(".template-hook").append(employee-info-all);
+  //$(".template-hook").append(employeeInfoAll);
+  document.getElementById("template-hook").innerHTML = employeeInfoAll;
+
+console.log(employeeInfoAll);
