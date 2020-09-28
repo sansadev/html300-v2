@@ -1,0 +1,73 @@
+//setting some color variables
+
+$body: rgba(55, 140, 226, 0.15);
+$header: rgb(172, 231, 225);
+$form: rgba(61, 69, 9, 0.49);
+$form-text: white;
+//create a mixin for form
+@mixin form {
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: $form;
+   height: 20rem;
+   width:  30rem;
+   font-style: normal;
+   margin: 4rem;
+   color:$form-text;
+}
+
+
+
+form {
+  @include form;
+  h2 {
+
+   text-align: center;
+  }
+}
+
+
+html,body {
+ box-sizing: border-box;
+
+}
+* {
+  margin:0;
+  padding:0;
+}
+header {
+  background-color: $header;
+  width: 100%;
+  height: 15rem;
+
+  margin:0;
+  padding:0;
+}
+footer {
+  background-color: $header;
+  width: 100%;
+  height: 15rem;
+
+  margin:0;
+  padding:0;
+}
+
+body {
+  background-color: $body;
+}
+.div1 {
+  width: 200px;
+  height: 150px;
+  text-align:center;
+  margin: 2rem;
+  background-color: green;
+  transition-duration: 1s;
+p {
+  padding:2.5rem;
+  color:white;
+}
+}
+//when hovers over the box, it changes color as well as rotates 45degrees.
+.div1:hover {
+ background-color: red;
+ transform:rotate(45deg);
+}
