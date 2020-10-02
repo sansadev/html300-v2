@@ -1,8 +1,21 @@
+@import 'variables';
+@mixin small {
+  background: #f00;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  transition: all .5s;
+}
 
 nav {
   height: 10vh;
-  background:rgb(179, 83, 137);
-
+  background:$nav;
+//styling for desktop mode
   .nav-links {
     display: flex;
     list-style: none;
@@ -17,7 +30,7 @@ nav {
     color: white;
     text-decoration: none;
     font-size: 1.3rem;
-    display:flex; 
+    display:flex;
   }
 
 }
@@ -43,7 +56,7 @@ nav {
    //use mask
    .nav-links {
      position:fixed;
-     background: purple;
+     background: $nav;
      height: 100vh;
      width: 100%;
      flex-direction: column;
@@ -65,14 +78,5 @@ h1 {
 }
 
 div.small {
-    background: #f00;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -50px;
-    margin-top: -50px;
-    transition: all .5s;
+   @include small;
 }
