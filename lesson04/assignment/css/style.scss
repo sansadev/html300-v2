@@ -1,4 +1,16 @@
-//impoting partials here
+//importing partials
+@import 'nav';
 
-@import 'components.content';
-@import 'settings.variables';
+
+
+
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+ 
+}
