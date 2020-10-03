@@ -79,7 +79,7 @@ const employeeInfoAll = templateHook.map(function(emp) {
   return template;
   });
 
-  //$(".template-hook").append(employeeInfoAll);
+ 
   document.getElementById("template-hook").innerHTML = employeeInfoAll;
 
 console.log(employeeInfoAll);
