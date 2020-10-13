@@ -1,4 +1,4 @@
-const template-hook = [
+const templateHook = [
   {
     "name": "Steve Smith",
     "jobTitle": "Project Manage",
@@ -52,3 +52,34 @@ const template-hook = [
     ]
   }
  ];
+
+const employeeInfoAll = templateHook.map(function(emp) {
+  let template = `
+
+  <div class="card">
+  <div class="left-content-card">
+  <img src="img/unsplash-headshot.jpg" alt="male avatar picture for employee id">
+
+  <h2>${emp.name}</h2>
+  <p>${emp.jobTitle}</p>
+  </div>
+  <div class="card-content">
+  <p><b>Company:</b>${emp.company}</p>
+  <p><b>Experience:</b>${emp.experience}</p>
+  <p><b>School:</b>${emp.school}</p>
+  <p><b>Major:</b>${emp.major}</p>
+  <p><b>Email:</b>${emp.email}</p>
+  <div class="linkedin-img-logo"><img src="img/linkedin.svg" alt="linkedin-logo">
+  <span class="linkedin-email">${emp.linkedInUrl}</span></div>
+
+  </div>
+  </div>
+
+  `
+  return template;
+  });
+
+ 
+  document.getElementById("template-hook").innerHTML = employeeInfoAll;
+
+console.log(employeeInfoAll);

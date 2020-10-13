@@ -1,17 +1,107 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:after,
 *:before {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .main {
-    padding: 2rem;
+  padding: 5rem;
 }
 
 h1 {
-    color: $red;  
+  color: $red;
+}
+
+body {
+  background-color: $light-steel-blue;
+}
+//image height and width
+img {
+  height: 10rem;
+  width: 10rem;
+  border-radius:50%;
+}
+
+.main-div{
+  box-sizing: border-box;
+  background-color: $ghost-white;
+  height: 30rem;
+  width:60rem;
+  height:35rem;
+  width:60rem;
+  padding:0.1rem 1rem 0.1rem 0;
+}
+
+.card{
+  background-color: $white;
+  height: 27rem;
+  width:50rem;
+  box-sizing: border-box;
+  margin-left:5rem;
+  margin-top:4rem;
+  color:gray;
+}
+.left-content-card {
+  position: absolute;
+  padding:2rem;
+  box-sizing: border-box;
+  float:left;
+}
+.card-content {
+  position: relative;
+  box-sizing: border-box;
+  background-color: $white-smoke;
+  height: 18rem;
+  width:28rem;
+  margin-right: 7rem;
+  margin-top:5rem;
+  float:right;
+}
+//nesting for linkedin logo
+.linkedin-img-logo {
+
+  img {
+    height: 1.6rem;
+    width: 1.6rem;
+    border-radius: 10%;
+    margin-left: 2rem;
+  }
+  .linkedin-email {
+    position:absolute;
+    margin-left: 1rem;
+    margin-top: 0.2rem;
+
+  }
+}
+
+
+//nesting for left-content-card
+
+.left-content-card {
+
+  margin-top: 2.5rem;
+
+  h2 {
+    margin-left: 1rem;
+  }
+  p {
+    margin-left: 1rem;
+    margin-top: -1rem;
+    font-style: italic;
+  }
+}
+
+
+//nesting for card-content
+.card-content {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  p {
+  margin-left: 2rem;
+  margin-top: 1.2rem
+ }
 }
