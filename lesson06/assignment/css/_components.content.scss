@@ -60,7 +60,13 @@ nav {
     font-size: 1.3rem;
     display:flex;
   }
-
+ li a:hover {
+  text-decoration: none;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  padding: 6px 0;
+  color:$sidebar-heading;
+}
 }
 .grid-container {
   display: grid;
@@ -77,10 +83,12 @@ nav {
   flex-wrap: wrap;
   background-color: $background;
 
-  h1 {
-    color: white;
+  h2 {
+    color: $sidebar-heading;
     display: flex;
     justify-content: center;
+    margin-top: 2rem;
+    text-transform:uppercase;
   }
   p{
     padding:2rem;
@@ -152,7 +160,7 @@ a {
 .waterfall {
   margin-bottom: 3rem;
 }
-//about us page h1 animation using  a class and keyframe 
+//about us page h1 animation using  a class and keyframe
 .glow {
   font-size: 80px;
   color: red;
@@ -169,3 +177,4 @@ a {
     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
 }
+//styling a tag tooltip for yoga.html page
