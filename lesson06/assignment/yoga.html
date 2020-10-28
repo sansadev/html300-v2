@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+   <link rel="stylesheet" href="css/style.css" />
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <title>Assignment 06 - Bootstrap 4</title>
+ </head>
+ <body>
+  <div class="grid-container">
+  <div class="header">
+    <header>
+      <div class="logo">
+        <img src="image/yoga-chakra.jpg" id ="yoga-chakra" alt="man sitting in ayogic posture">
+      </div>
+        <h1>Yoga</h1>
+    </header>
+  </div>
+  <div class="nav-bar">
+      <nav>
+        <ul class="nav-links">
+          <li class="link"><a href="index.html">Home</a></li>
+          <li class="link"><a href="about.html">About Us</a></li>
+          <li class="link"><a href="yoga.html">Yoga</a></li>
+          <li class="link"><a href="pranayama.html">Pranayama</a></li>
+        </ul>
+      </nav>
+  </div>
+</div>
+  <main class="main">
+      <div class="container">
+        <h2>LEARN ABOUT YOGA</h2>
+        <p class="text-danger"><a href="#" data-toggle="tooltip" title="In this section you learn about yoga!!">Yoga for beginners</a></p>
+        <p>Deepen your understanding of yoga by exploring the philosophical aspects of this ancient practice. Learn about the history of yoga, get an overview of the major yogic texts,
+          and learn more about the chakras, the body’s energy centers and their relationship to health and wellness. We’ve also included a section on using asanas to treat common ailments
+          and conditions as well as a compressive list of our articles on yoga.</p>
+          <div id="accordion" class="mb-5">
+            <div class="card">
+              <div class="card-header bg-warning">
+                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                  Yoga Philosophy
+                </a>
+              </div>
+              <div id="collapseOne" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+              The main philosophy of yoga is simple: mind, body and spirit are all one and cannot be clearly separated. Yet there is a multitude of philosophical ideas developed by looking into the deeper dimensions of the body, mind and spirit.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header bg-warning">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                Yoga Therapy
+              </a>
+            </div>
+            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                Yoga Therapy is the use of yoga postures, meditation and pranayama to help the body naturally heal and balance itself. Certain yogic practices have been shown to have specific healing qualities in addition to yoga’s inherent ability to create wellness and good health.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header bg-warning">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                Energy Anatomy
+              </a>
+            </div>
+            <div id="collapseThree" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                Hatha and Tantra yogas have developed a rich description of the anatomy of the subtle or energy body, including the different types of energies, the nadi energy channels and chakra
+                energy centers.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <div class="footer">
+      <p class="footer-text">© Copyright 2020 Swati. All rights reserved.</p>
+  </div>
+   <script src="/./yoga.js"></script>
+  </body>
+  </html>
