@@ -5,7 +5,7 @@
 <div class="header">
      <header>
           <div class="logo">
-           <img src="image/yoga-chakra.jpg" id ="yoga-chakra" alt="man sitting in a yogic posture"/>
+           <img src="./images/yoga-chakra.jpg" id="yoga-chakra"/>
 
           </div>
          <h1>Yoga</h1>
@@ -33,44 +33,18 @@
        </div>
        <main class="main">
             <div class="card-container">
-              <div class="city">
+              <div class="city" v-for="card in cards" v-bind:key="card">
                 <a href="#">
                   <div class="city-image">
-                    <img src="image/yoga.jpg" alt="yoga"/>
+                  <img v-bind:src="card.img" />
                   </div>
                   <div class="description">
-                    <h2>Karma Yoga</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, ipsam deleniti excepturi asperiores sit libero natus, porro, unde voluptates similique vel odio! Cum voluptatum optio dolore nobis dicta sapiente, inventore?</p>
+                    <h2>{{card.title}}</h2>
+                    <p>{{card.desc}}</p>
                   </div>
                 </a>
               </div>
-              <div class="city">
-                <a href="#">
-                  <div class="city-image">
-                    <img src="image/yoga.jpg" alt="yoga"/>
-                  </div>
-                  <div class="description">
-                    <h2>Jnana Yoga</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cum cumque facere eius rem? Voluptas dolorum voluptate, a ipsam fugiat beatae. Doloremque earum, commodi, accusamus assumenda culpa quam? Cumque, eaque.
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <div class="city">
-                <a href="#">
-                  <div class="city-image">
-                    <img src="image/yoga.jpg" alt="yoga"/>
-                  </div>
-                  <div class="description">
-                    <h2>Hatha Yoga</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate quae praesentium facere ea minus id debitis veritatis aliquid ipsum aut, in iusto hic modi, saepe. Optio asperiores saepe sit natus.
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </div>
+             </div>
           </main>
     </div>
     <div class="footer">
@@ -82,11 +56,34 @@
 </template>
 
 <script>
+
 export default {
+
   name: 'Home',
   data() {
   return {
-  items: ["Home", "About", "Yoga", "Pranayama"]
+  items: ["Home", "About", "Yoga", "Pranayama"],
+  cards: [
+         {
+         img: require ("./images/yoga.jpg"),
+         title: "Karma Yoga",
+         desc: "Karma yoga, also called Karma marga, is one of the three spiritual paths in Hinduism"
+         },
+
+         {
+         img: require ("./images/yoga.jpg") ,
+         title: "Jnana Yoga",
+         desc: "Jnana yoga, also known as Jnanamarga, is one of the several spiritual paths in Hinduism"
+         },
+
+         {
+         img: require ("./images/yoga.jpg"),
+         title: "Karma Yoga",
+         desc: "Haṭha yoga is a branch of yoga. The Sanskrit word  haṭha literally means force and thus alludes to a system of physical techniques"
+         }
+
+
+         ]
 
   }
   }
