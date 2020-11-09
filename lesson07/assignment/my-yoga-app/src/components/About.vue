@@ -42,7 +42,7 @@ export default {
   items: [{"name":"Home",
             "path":"/"},
           {"name":"About",
-            "path":"#/about"},
+            "path":"/about"},
           {"name":"Yoga",
              "path":"#/yoga" },
           {"name":"Pranayama",
