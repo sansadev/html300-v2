@@ -52,6 +52,11 @@
 </template>
 <script>
 export default {
+ready () {
+$(document).ready(function(){
+$('[data-toggle="tooltip"]').tooltip();
+})
+},
 
   name: 'About',
   data() {

@@ -7,7 +7,10 @@ import Home from './components/Home.vue'
 import About from './components/About.vue'
 import Yoga from './components/Yoga.vue'
 import Pranayama from './components/Pranayama.vue'
+import jQuery from 'jQuery'
 
+
+window.jQuery = jQuery
 
 Vue.use(BootstrapVue)
 Vue.use(VueRouter)

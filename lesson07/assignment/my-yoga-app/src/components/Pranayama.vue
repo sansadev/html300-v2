@@ -21,14 +21,14 @@
         <main class="main">
 
            <div class="container">
-           <h2>Pranayama: The Yogic Breathing</h2>
+           <h2 class="ml-0  pl-0 pt-2">Pranayama: The Yogic Breathing</h2>
          <p>If you’re feeling tired, heavy, dull, or emotionally off-balance, a few minutes of yogic breathing can energize, renew, and sustain you through your day or a challenging yoga class. There are a number of different breathing techniques in yoga that can influence and affect your experience in asana, relaxation, and meditation. Having a stronger connection and control of your breath will give you a deeper attunement of your physical, mental, and emotional bodies and help anchor your awareness in the present moment. Yogis believe that if you can master your breath through pranayama practices you can master your mind!</p>
          <div class="row">
            <div class="col-md-4" v-for="picture in pictures" v-bind:key="picture">
              <div class="thumbnail">
 
-               <img v-bind:src="picture.img" />
-               <div class="caption">
+               <img class="w-100 p-2" v-bind:src="picture.img" />
+               <div class="caption p-2">
                  <p>{{ picture.contents}}</p>
                </div>
 
