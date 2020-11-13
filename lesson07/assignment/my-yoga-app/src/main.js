@@ -1,16 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App.vue'
-import { BootstrapVue } from 'bootstrap-vue'
+import BootstrapVue from 'bootstrap-vue'
 import './main.scss'
 import Home from './components/Home.vue'
 import About from './components/About.vue'
 import Yoga from './components/Yoga.vue'
 import Pranayama from './components/Pranayama.vue'
-import jQuery from 'jQuery'
 
-
-window.jQuery = jQuery
 
 Vue.use(BootstrapVue)
 Vue.use(VueRouter)
