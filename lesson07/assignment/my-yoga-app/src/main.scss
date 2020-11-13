@@ -1,0 +1,192 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+
+$header: rgb(183, 110, 121);
+$nav: rgb(31, 73, 227);
+$background:rgb(197, 196, 196);
+$accordion:  rgb(65, 233, 170);
+$sidebar-heading: rgb(23, 84, 99);
+
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+
+.header {
+  background-color: $header;
+  height: 20rem;
+  width: 100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  h1 {
+
+    display:flex;
+    justify-content:center;
+    color: white;
+  }
+}
+
+.nav-bar {
+  background-color: $nav;
+}
+
+
+.footer {
+  background-color: $header;
+  width:100%;
+  height: 20rem;
+}
+//styling logo image
+#yoga-chakra {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+}
+//styling nav
+nav {
+  height: 10vh;
+  background:rgb(179, 83, 137);
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin-left: auto;
+
+  }
+  li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    display:flex;
+  }
+ li a:hover {
+  text-decoration: none;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  padding: 6px 0;
+  color:$sidebar-heading;
+}
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+
+}
+.content {
+  display:grid;
+  grid-template-columns: 1fr 2fr;
+}
+.sidebar {
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: $background;
+
+  h2 {
+    color: $sidebar-heading;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    text-transform:uppercase;
+  }
+  p{
+    padding:2rem;
+    line-height: 1.5rem;
+    word-spacing: 0.5rem;
+
+  }
+}
+//styling three cards of main div
+.main {
+  width: 100%;
+  background-color: $background;
+
+}
+//using flex makes the card on one row
+.card-container {
+  display: flex;
+  width:100%;
+  background-color: rgba(31, 31, 31, 0.95);
+
+}
+.city {
+  width: 30%;
+  margin: 0.5em auto;
+  background-color: rgba(31, 31, 31, 0.95);
+  border: 2px solid rgb(173, 223, 169);
+
+}
+
+.city-image,
+.description {
+  width: 90%;
+  margin: 0 auto;
+}
+.city-image {
+  padding: 1.2em 1em;
+}
+
+.description {
+  padding: 1em 4em;
+
+}
+
+.city-image img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+.description h2 {
+  padding-bottom: 0.5em;
+}
+//footer styling
+//used height and align-items to make the p align in the center
+.footer-text {
+  color: white;
+  text-shadow: 0.2rem 0.2rem rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 18rem;
+
+ }
+//about us page image styling
+.waterfall {
+  margin-bottom: 3rem;
+}
+//about us page h1 animation using  a class and keyframe
+.glow {
+  font-size: 80px;
+  color: red;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+//styling  for yoga.html page
