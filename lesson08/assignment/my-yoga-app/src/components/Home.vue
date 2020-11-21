@@ -1,6 +1,5 @@
 <template>
 <div>
-
 <div class="grid-container">
 
 <div class="header">
@@ -32,23 +31,31 @@ inquiry and exploration.  As the cultural and religious diversity of practitione
 incorporated within any belief system.
 </p>
 </div>
-<main class="main">
 
-<card v-for="card in cards"
-v-bind:card="card"
-v-bind:key="card.id"
+
+
+ <section v-if="cards">
+<div class="card-container">
+<card
+ v-for="card in cards"
+ v-bind:card="card"
+ v-bind:key="card.img"
  >
+
 </card>
+</div>
+</section>
 
 
 
-</main>
 
+
+</div>
 <div class="footer">
 <p class="footer-text">© Copyright 2020 Swati. All rights reserved.</p>
 
 </div>
-</div>
+
 </div>
 </div>
 </template>
@@ -60,6 +67,9 @@ import Card from './Card.vue';
 export default {
 
 name: 'Home',
+components: {
+ Card,
+},
 data() {
 return {
 items: [{"name":"Home",
