@@ -1,7 +1,7 @@
 <script>
 export default {
-name: 'card',
-props: ['card'],
+  name: 'card',
+  props: ['card'],
 
 }
 </script>
@@ -10,16 +10,16 @@ props: ['card'],
 
 
   <div class="city">
-     <a href="#">
-       <div class="city-image">
-          <img v-bind:src="card.img" />
-        </div>
-     <div class="description">
-     <h2>{{card.title}}</h2>
-     <p>{{card.desc}}</p>
-     </div>
-     </a>
+    <a href="#">
+      <div class="city-image">
+        <img v-bind:src="card.img" />
+      </div>
+      <div class="description">
+        <h2>{{card.title}}</h2>
+        <p>{{card.desc}}</p>
+      </div>
+    </a>
 
-</div>
+  </div>
 
 </template>
